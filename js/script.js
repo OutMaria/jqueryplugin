@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('#carousel-imagens').slick({
         autoplay: true,
         arrows: false
@@ -19,25 +18,12 @@ $(document).ready(function () {
 
     $('#form').validate({
         rules: {
-            nome: {
-                required: true
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            telefone: {
-                required: true
-            },
-            endereco: {
-                required: true
-            },
-            cep: {
-                required: true
-            },
-            cpf: {
-                required: true
-            },
+            nome: { required: true },
+            email: { required: true, email: true },
+            telefone: { required: true },
+            endereco: { required: true },
+            cep: { required: true },
+            cpf: { required: true }
         },
         submitHandler: function (form) {
             alert("Sua requisição foi enviada para análise, parabéns pela aquisição!");
